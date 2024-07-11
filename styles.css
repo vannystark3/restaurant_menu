@@ -1,0 +1,125 @@
+/* Responsive styles */
+@media (min-width: 576px) {
+    /* Medium view */
+    .navbar-toggler {
+        display: inline-block; 
+    }
+
+    .navbar-nav {
+        display: none; 
+    }
+
+    #search-input {
+        width: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .menu-item {
+        max-width: calc(48% - 10px); 
+    }
+}
+
+@media (min-width: 768px) {
+    /* Desktop view */
+    .navbar-nav {
+        display: flex; 
+        flex-direction: row;
+    }
+    .menu-item {
+        max-width: calc(32% - 10px); 
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Mobile view */
+    .navbar-toggler {
+        display: inline-block; /* Display the toggler for smaller screens */
+    }
+
+    .navbar-nav {
+        display: none; /* Initially hide navigation links for mobile screens */
+    }
+
+    .menu-item {
+        width: 100%; /* Maximum 1 item in a row for mobile screens */
+    }
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: #333;
+    padding: 18px;
+}
+a{
+    background-color: lightgrey;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    margin: 1px;
+}
+a:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.9);
+}
+.navbar-toggler{
+    background-color: rgba(0, 0, 0, 0);
+    color: orange;
+    border-style: none;
+    font-weight: 800;
+    font-size: larger;
+    padding: 5px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#search-input{
+    width: 59%;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border-style: none;
+}
+.vid{
+    position: relative;
+    background-color: #333;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    overflow: hidden;
+    padding-bottom: 25%;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.1);
+}
+video{
+    position: absolute;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card{
+    width: 360px;
+    height: 500px;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.3);
+}
+.card-img-top{
+    width: 358px;
+    height: 270px;
+}
+h5{
+    color: teal;
+}
+.card-text{
+    color: red;
+}
